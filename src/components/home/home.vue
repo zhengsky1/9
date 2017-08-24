@@ -11,7 +11,7 @@
                 <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
                 <router-link :to="{name:'new.list'}">
                         <span class="mui-icon mui-icon-home"></span>
-                        <div class="mui-media-body">新闻资</div>
+                        <div class="mui-media-body">新闻资讯</div>
                         </router-link>
                         </li>
                
