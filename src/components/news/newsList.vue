@@ -23,6 +23,8 @@ export default{
     data(){
         return {
             newsList:[],
+            
+
         }
     },
     created(){

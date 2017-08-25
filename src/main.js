@@ -12,6 +12,8 @@ import NewList from './components/news/newsList.vue';
 import NewDetail from './components/news/newsDetail.vue';
 import PhotoList from './components/photo/photoList.vue';
 import PhotoDetail from './components/photo/photodetail.vue';
+import GoodsList from './components/goods/goodslist.vue';
+import Goodsdetail from './components/goods/goodsdetail.vue';
 // Mintui 引入
 import MintUi from 'mint-ui';
 import 'mint-ui/lib/style.css';
@@ -57,6 +59,8 @@ let router = new VueRouter ({
         {name:'new.detail',path:'/news/detail',component:NewDetail},
         {name:'photo.list',path:'/photo',component:PhotoList},
         {name:'photo.detail',path:'/photo/detail/:imgId',component:PhotoDetail},
+        {name:'goods.list',path:'/goods/list',component:GoodsList},
+        {name:'goods.datail',path:'/goods/detail/:goodsId',component:Goodsdetail},
     ]
 })
 
