@@ -3,7 +3,7 @@
         <nav-bar title="图片详情"></nav-bar>
         <div class="photo-title">
             <p>{{imgInfo.title}}</p>
-            <span>发起日期：{{imgInfo.add_time}}</span>
+            <span>发起日期：{{imgInfo.add_time | converDate}}</span>
             <span>{{imgInfo.click}}次浏览</span>
             <span>分类：民生经济</span>
         </div>

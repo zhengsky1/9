@@ -5,7 +5,7 @@
     <router-view></router-view>
 
     <nav class="mui-bar mui-bar-tab">
-      <router-link :to="{name:'home'}" class="mui-tab-item mui-active" >
+      <router-link :to="{name:'home'}" class="mui-tab-item" >
         <span class="mui-icon icon-shouye"></span>
         <span class="mui-tab-label">首页</span>
       </router-link>

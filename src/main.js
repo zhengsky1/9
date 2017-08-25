@@ -25,8 +25,10 @@ Vue.use(MintUi);
 // 全局组件的操作
 import NavBar from './components/commons/NavBar.vue';
 import Comment from './components/commons/Comment.vue';
+import MySwipe from './components/commons/MySwiper.vue'
 Vue.component('NavBar',NavBar);
 Vue.component('Comment',Comment);
+Vue.component('MySwipe',MySwipe);
 // Mui 引入
 import './static/libs/mui-master/dist/css/mui.css';
 

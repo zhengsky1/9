@@ -23,7 +23,7 @@
             </ul>
             <ul class="comment-list">
                 <li v-for="(msg,index) in msgs" :key="index">
-                    {{msg.user_name}}：{{msg.content}} {{msg.add_time | convertDate}}
+                    {{msg.user_name}}：{{msg.content}} {{msg.add_time | converDate}}
                 </li>  
             </ul>
             <mt-button size="large" type="danger" plain @click="loadMoreByPage">加载更多{{currentPage}}</mt-button>

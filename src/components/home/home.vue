@@ -1,11 +1,6 @@
 <template>
     <div>
-        <mt-swipe :auto="4000">
-            <mt-swipe-item v-for="(img,index) in imgs" :key="index">
-                <a :href="img.url"><img :src="img.img">
-                </a>
-            </mt-swipe-item>
-        </mt-swipe>
+        <my-swipe url="getlunbo"></my-swipe>
         <div class="mui-content">
             <ul class="mui-table-view mui-grid-view mui-grid-9">
                 <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
@@ -44,31 +39,13 @@
 export default {
     data(){
         return {
-                imgs:[],
+               
         }
-    }, created() {
-        this.$ajax.get('getlunbo')
-
-            .then(res => {
-                this.imgs = res.data.message;
-
-            })
-            .catch(err => {
-                console.log('加载失败', err);
-            })
-
     }
 }
 </script>
 <style scoped>
-.mint-swipe {
-    height: 200px;
-}
 
-.mint-swipe img {
-    height: 200px;
-    width: 100%;
-}
 /*设置9九宫格*/
 .mui-table-view.mui-grid-view.mui-grid-9{
   background-color: white;

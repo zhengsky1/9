@@ -28,7 +28,7 @@
                 <li>商品参数</li>
                 <li>商品货号：{{goodsInfo.goods_no}}</li>
                 <li>库存情况：{{goodsInfo.stock_quantity}}件</li>
-                <li>上架时间：{{goodsInfo.add_time | convertDate}}</li>
+                <li>上架时间：{{goodsInfo.add_time | converDate}}</li>
             </ul>
         </div>
         <div class="product-info">
